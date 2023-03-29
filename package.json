@@ -1,0 +1,17 @@
+{
+  "name": "bff-template",
+  "version": "0.0.1",
+  "description": "The Backend For Frontend Template",
+  "main": "index.js",
+  "author": "https://github.com/gitsunmin",
+  "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "packageManager": "yarn@3.5.0",
+  "devDependencies": {
+    "typescript": "^5.0.2"
+  }
+}
