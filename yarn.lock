@@ -271,9 +271,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@bff-template/common@workspace:packages/common":
+"@bff-template/common@*, @bff-template/common@workspace:packages/common":
   version: 0.0.0-use.local
   resolution: "@bff-template/common@workspace:packages/common"
+  languageName: unknown
+  linkType: soft
+
+"@bff-template/frontend@workspace:packages/frontend":
+  version: 0.0.0-use.local
+  resolution: "@bff-template/frontend@workspace:packages/frontend"
+  dependencies:
+    "@bff-template/common": "*"
+    "@types/react": ^18.0.28
+    "@types/react-dom": ^18.0.11
+    "@vitejs/plugin-react": ^3.1.0
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    typescript: ^4.9.3
+    vite: ^4.2.0
   languageName: unknown
   linkType: soft
 
@@ -948,20 +963,6 @@ __metadata:
   checksum: 6092fda75c63b110c706b6a9bfde8a612ad595b628f0bd2147eea1d3406723020810e591effc7db1da91d80a71a737a313567c5abb3813e8d9c71f4aa595b410
   languageName: node
   linkType: hard
-
-"frontend@workspace:packages/frontend":
-  version: 0.0.0-use.local
-  resolution: "frontend@workspace:packages/frontend"
-  dependencies:
-    "@types/react": ^18.0.28
-    "@types/react-dom": ^18.0.11
-    "@vitejs/plugin-react": ^3.1.0
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    typescript: ^4.9.3
-    vite: ^4.2.0
-  languageName: unknown
-  linkType: soft
 
 "fs-minipass@npm:^2.0.0, fs-minipass@npm:^2.1.0":
   version: 2.1.0

@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "https://github.com/gitsunmin",
   "license": "MIT",
+  "scripts": {
+    "start:frontend": "yarn workspace @bff-template/frontend start"
+  },
   "workspaces": {
     "packages": [
       "packages/*"
