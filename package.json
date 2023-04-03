@@ -1,12 +1,12 @@
 {
-  "name": "bff-template",
+  "name": "bff-practice",
   "version": "0.0.1",
   "description": "The Backend For Frontend Template",
   "main": "index.js",
   "author": "https://github.com/gitsunmin",
   "license": "MIT",
   "scripts": {
-    "start:frontend": "yarn workspace @bff-template/frontend start"
+    "start:frontend": "yarn workspace @bff-practice/frontend start"
   },
   "workspaces": {
     "packages": [

@@ -1,15 +1,19 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import common from '@bff-template/common'
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import common from '@bff-practice/common';
 
 console.log('common:', common);
 
-import './App.css'
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+
+  function onCallBackend() {
+    fetch('http://localhost:3000').then(res => res).then(res => console.log(res));
+  }
 
   return (
     <div className="App">
@@ -23,6 +27,7 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
+        <button onClick={onCallBackend}>call backend</button>
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
@@ -34,7 +39,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
