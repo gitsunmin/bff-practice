@@ -6,7 +6,7 @@
   "author": "https://github.com/gitsunmin",
   "license": "MIT",
   "scripts": {
-    "start:frontend": "yarn workspace @bff-practice/frontend start"
+    "start:front": "yarn workspace @bff-practice/frontend start"
   },
   "workspaces": {
     "packages": [

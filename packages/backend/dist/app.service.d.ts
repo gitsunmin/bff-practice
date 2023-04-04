@@ -1,5 +1,3 @@
 export declare class AppService {
-    getHello(): {
-        message: string;
-    };
+    getHello(): string;
 }

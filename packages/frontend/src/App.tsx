@@ -12,7 +12,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   function onCallBackend() {
-    fetch('http://localhost:3000').then(res => res).then(res => console.log(res));
+    fetch('http://localhost:3000').then(res => res.text()).then(res => console.log(res));
   }
 
   return (
