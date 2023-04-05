@@ -8,12 +8,11 @@ The project is a website that provides radio from all over the world with weathe
     - api: https://open-meteo.com/en/docs
 - Search Radio Station
     - api: https://www.radio-browser.info
-
+## Used Framework
+- React
+- NestJS
 ## Package Manager
 - yarn berry
 - version
     - node: v18.12.1
     - yarn: v3.5.0
-## Used Framework
-- React
-- NestJS
