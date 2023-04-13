@@ -9,7 +9,7 @@ The project is a website that provides radio from all over the world with weathe
 - Search Radio Station
     - api: https://www.radio-browser.info
 ## Used Framework
-- React
+- NextJS
 - NestJS
 ## Package Manager
 - yarn berry
